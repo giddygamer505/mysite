@@ -1,1 +1,1 @@
-web: gunicorn superlists.wsgi --log-file -
+web: python manage.py migrate && gunicorn superlists.wsgi --log-file -
